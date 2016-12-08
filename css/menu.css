@@ -56,9 +56,16 @@ table {
     border-radius: 4px;
     box-shadow:0 0 3px 1px #2aabd2; 
 }
-.my-test {
+.update {
     display: block;
-    height: 100px;
+    background: #ddd;
+    width: 240px;
+    height: 180px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px; 
 }
 
 .container-bar {
@@ -69,85 +76,114 @@ table {
     list-style: none;
     object-position: fixed;
 }
-.logo {
-    margin-right: 300px; 
-    font-style: italic;
-    padding: 0;
-}
 .my-nav-bar {
-    display: inline-block;
-    padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    padding: 10px 200px;
-    
+    display: block;
+    padding: 10px;
+    padding-left: 130px; 
 }
-
+.li-menu {
+    display: none;
+}
 .my-nav-bar li a {
-    height: 40px;
-    width: 200px;
-    background: #777;
     display: inline-block;
-    line-height: 40px;
-    padding-left: 15px; 
-    text-decoration: none;
+    margin: 0 5px; 
+    width: 200px;
+    height: 40px;
+    background: #777;
     color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.my-nav-bar a {
+    display: none;
+}
+.my-nav-bar i {
+    display: none;
 }
 .my-nav-bar li a:hover {
     background: dodgerblue;
     box-shadow: inset 1px 3px 15px #2962ff;
     transition: background .2s ease-in-out, box-shadow .2s ease-in-out .1s;
 }
+.my-nav-li .logo {
+    margin-right: 150px;
+}
+/*@media screen and (max-width: 1801px) {
 
-.left-menu {
-    margin-top: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-}
-.left-menu li {
-    
-}
-.left-menu li a {
-    display: block;
-    width: 200px;
-    height: 40px;
-    padding: 10px;
-    margin: 1px;
-    background: #777;
-    text-decoration: none;
-    color: #fff;
-    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
-}
-.left-menu li a:hover {
-    background: #2962ff;
-}
-@media screen and (max-width: 1801px) {
-.logo {
-    margin-right: 100px; 
-}
-.my-nav-bar {
-    font-size: 14px;
-}
-
-.my-nav-bar li a {
-    height: 40px;
-    width: 150px;
-}
-
-}
+}*/
 
 @media screen and (max-width: 1348px) { 
-    .my-nav-bar {
-        padding: 10px 50px;
-    }
-    .logo {
-    margin-right: 50px; 
+.my-nav-bar {
+    padding-left: 50px; 
+}
+.my-nav-bar li a {
+    width: 150px;
+    margin: 0 3px;
+}
+.update{
+    display: none;
+}
+.left-menu {
+    display: none;
+}
+.my-nav-li .logo {
+    margin-right: 50px;
+}
+.my-nav-bar a {
+    display: none;
+}
+.my-nav-bar i {
+    display: none;
 }
 }
-.test {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background: blue;
 
+
+@media screen and (max-width: 907px) {
+    .my-nav-bar {
+        padding: 10px 70px;
+    }
+    .my-nav-bar .logo {
+        display: none;
+    }
+    .li-menu {
+        display: block;
+    }
+    .my-nav-bar a {
+        display: inline-block;
+        width: 250px;
+        height:40px;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 26px;
+    }
+    .my-nav-bar i{
+        display: inline-block;
+        border: 1px solid #fff;
+        padding: 4px;
+        border-radius: 5px;
+        color: #fff;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
+        margin-left: 58%;
+    }
+    .my-nav-li {
+         z-index: 999;
+         position: relative;
+         width: 100%;
+    }
+    .my-nav-bar li {
+        display: block;
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition-property: all .8s ease-in-out;
+        border-radius: 10px;
+    }
+    .my-nav-bar li a {
+        height: 40px;
+        width: 100%;
+        background: rgba(70, 70, 70, 0.8);
+         position: relative;
+    }
 }
