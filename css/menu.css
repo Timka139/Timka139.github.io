@@ -71,6 +71,7 @@ table {
 .container-bar {
     height: 60px;
     width: 100%;
+    margin: 0px;
     background: #444;
     padding: 0;
     list-style: none;
@@ -137,19 +138,18 @@ table {
     display: none;
 }
 }
-
-
 @media screen and (max-width: 907px) {
     .my-nav-bar {
         padding: 10px 70px;
+        width: 100%;
     }
-    .my-nav-bar .logo {
-        display: none;
-    }
-    .li-menu {
+    .ms-menu {
         display: block;
+        height: 40px;
+        width: 100%;
+        position: absolute;
     }
-    .my-nav-bar a {
+    .ms-menu a {
         display: inline-block;
         width: 250px;
         height:40px;
@@ -157,33 +157,49 @@ table {
         color: #ffffff;
         padding: 10px;
         font-size: 26px;
+        margin-right: 50%;
+        position: relative;
     }
-    .my-nav-bar i{
+    .ms-menu i{
         display: inline-block;
         border: 1px solid #fff;
         padding: 4px;
         border-radius: 5px;
         color: #fff;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
-        margin-left: 58%;
+        position: relative;
     }
     .my-nav-li {
-         z-index: 999;
-         position: relative;
-         width: 100%;
-    }
-    .my-nav-bar li {
         display: block;
+        margin-top: 50px;
         width: 0px;
         height: 0px;
         overflow: hidden;
         transition-property: all .8s ease-in-out;
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
+        z-index: 999;
+        position: relative;
+        width: 100%;
     }
     .my-nav-bar li a {
         height: 40px;
         width: 100%;
         background: rgba(70, 70, 70, 0.8);
          position: relative;
+    }
+}
+@media screen and (max-width: 725px) {
+    .ms-menu a {
+        margin-right: 38%;
+    }
+}
+@media screen and (max-width: 602px) {
+    .ms-menu a {
+        margin-right: 28%;
+    }
+}
+@media screen and (max-width: 509px) {
+    .ms-menu a {
+        margin-right: 22%;
     }
 }

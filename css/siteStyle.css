@@ -53,3 +53,11 @@
     text-align: left;
     color: #99979c;
 }
+
+@media screen and (max-width: 725px) {
+    .site-bottom li{
+        width: 90px;
+        padding: 5px;
+        font-size: 13px; 
+    }   
+}
