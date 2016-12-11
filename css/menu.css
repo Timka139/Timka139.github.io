@@ -215,7 +215,16 @@ table {
 }
 
 @media screen and (max-width: 474px) {
+    .my-nav-bar {
+        padding: 10px;
+    }
     .ms-menu a {
         margin-right: 8%;
+    }
+
+}
+@media screen and (max-width: 397px) {
+    .ms-menu a {
+        margin-right: 2%;
     }
 }
