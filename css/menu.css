@@ -81,6 +81,7 @@ table {
     display: block;
     padding: 10px;
     padding-left: 130px; 
+    margin: 0;
 }
 .li-menu {
     display: none;
