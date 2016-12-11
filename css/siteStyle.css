@@ -61,3 +61,10 @@
         font-size: 13px; 
     }   
 }
+@media screen and (max-width: 500px) {
+    .site-bottom li{
+        width: 80px;
+        padding: 3px;
+        font-size: 13px; 
+    }   
+}

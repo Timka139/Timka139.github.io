@@ -213,3 +213,9 @@ table {
         margin-right: 22%;
     }
 }
+
+@media screen and (max-width: 474px) {
+    .ms-menu a {
+        margin-right: 8%;
+    }
+}
