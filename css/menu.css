@@ -85,6 +85,15 @@ table {
 .li-menu {
     display: none;
 }
+.my-nav-bar a {
+    display: none;
+    /*padding: 10px;
+    width: 200px;
+    height: 40px;*/
+}
+.my-nav-bar i {
+    display: none;
+}
 .my-nav-bar li a {
     display: inline-block;
     margin: 0 5px; 
@@ -96,19 +105,18 @@ table {
     text-decoration: none;
     font-size: 16px;
 }
-.my-nav-bar a {
-    display: none;
-}
-.my-nav-bar i {
-    display: none;
-}
+
 .my-nav-bar li a:hover {
     background: dodgerblue;
     box-shadow: inset 1px 3px 15px #2962ff;
     transition: background .2s ease-in-out, box-shadow .2s ease-in-out .1s;
 }
 .my-nav-li .logo {
-    margin-right: 150px;
+    margin-right: 120px;
+    font-size: 23px;
+    width: 220px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
 }
 /*@media screen and (max-width: 1801px) {
 
@@ -116,7 +124,7 @@ table {
 
 @media screen and (max-width: 1348px) { 
 .my-nav-bar {
-    padding-left: 50px; 
+    padding-left: 40px; 
 }
 .my-nav-bar li a {
     width: 150px;
@@ -129,7 +137,9 @@ table {
     display: none;
 }
 .my-nav-li .logo {
-    margin-right: 50px;
+    margin-right: 40px;
+    width: 170px;
+    font-size: 19px;
 }
 .my-nav-bar a {
     display: none;
