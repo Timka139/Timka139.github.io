@@ -74,6 +74,7 @@ table {
     margin: 0px;
     background: #444;
     padding: 0;
+    margin: 0;
     list-style: none;
     object-position: fixed;
 }
@@ -81,7 +82,6 @@ table {
     display: block;
     padding: 10px;
     padding-left: 130px; 
-    margin: 0;
 }
 .li-menu {
     display: none;
@@ -171,6 +171,11 @@ table {
         margin-right: 50%;
         position: relative;
     }
+    .ms-menu a:hover {
+        cursor: pointer;
+        color: dodgerblue;
+        transition: color .2s ease-in-out;
+    } 
     .ms-menu i{
         display: inline-block;
         border: 1px solid #fff;
@@ -180,6 +185,9 @@ table {
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
         position: relative;
     }
+    .ms-menu i:hover {
+        cursor: pointer;
+    } 
     .my-nav-li {
         display: block;
         margin-top: 50px;
