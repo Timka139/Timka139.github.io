@@ -86,13 +86,10 @@ table {
 .li-menu {
     display: none;
 }
-.my-nav-bar a {
+.logo-mi {
     display: none;
-    /*padding: 10px;
-    width: 200px;
-    height: 40px;*/
 }
-.my-nav-bar i {
+.ms-menu i {
     display: none;
 }
 .my-nav-bar li a {
@@ -177,6 +174,7 @@ table {
         transition: color .2s ease-in-out;
     } 
     .ms-menu i{
+        margin-top:  10px;
         display: inline-block;
         border: 1px solid #fff;
         padding: 4px;
@@ -225,9 +223,19 @@ table {
 
 @media screen and (max-width: 474px) {
     .my-nav-bar {
-        padding-left: 5px;
+        padding-left: 2px;
     }
     .ms-menu a {
-        margin-right: 8%;   
+        margin-right: 5%;
+        font-size: 20px;   
+    }
+    .ms-menu i {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 315px) {
+    .ms-menu a {
+        margin-right: 15%;
+        width: 180px;
     }
 }

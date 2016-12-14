@@ -8,11 +8,11 @@ function menuBtn() {
      var myMenu=$(".my-nav-li"), style = myMenu[0].style;
      console.log(myMenu);
      if (style.height == "160px") {
-        style.transition = "all .8s ease-in-out";
+        style.transition = "all .5s ease-in-out";
      style.height = "0px";
      }  
      else {
-         style.transition = "all .8s ease-in-out";
+         style.transition = "all .5s ease-in-out";
      style.height = "160px";
      style.width = "100%";
      } 
