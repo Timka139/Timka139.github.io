@@ -116,8 +116,8 @@ table {
     height: 40px;
     background: rgba(0, 0, 0, 0);
     margin-left: 250px;
-    margin-left: 28%;
-}
+    margin-left: 24%;
+} 
 .my-nav-li .logo:hover {
     background: rgba(0, 0, 0, 0);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -127,15 +127,12 @@ table {
 @media screen and (max-width: 1603px) {
     .my-nav-li .logo {
         /*margin-left: 100px;*/
-        margin-left: 20%;
-    }
-}
-@media screen and (max-width: 1129px) { 
-    .my-nav-li .logo {
         margin-left: 10%;
+        margin-right: 0;
     }
 }
-@media screen and (max-width: 1348px) { 
+
+@media screen and (max-width: 1359px) { 
 .my-nav-bar {
     padding-left: 40px; 
 }
@@ -160,6 +157,11 @@ table {
 .my-nav-bar i {
     display: none;
 }
+}
+@media screen and (max-width: 1129px) { 
+    .my-nav-li .logo {
+        margin-left: 10%;
+    }
 }
 @media screen and (max-width: 1000px) {
     .my-nav-li .logo {
