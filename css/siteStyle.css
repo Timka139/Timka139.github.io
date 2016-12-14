@@ -68,3 +68,14 @@
         font-size: 13px; 
     }   
 }
+@media screen and (max-width: 411px) {
+    .site-bottom li{
+        width: 60px;
+        padding: 3px;
+        height: 20px;
+        font-size: 12px; 
+    }   
+    .site-bottom p {
+        font-size: 12px;
+    }
+}
